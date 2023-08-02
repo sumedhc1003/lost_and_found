@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta name="viewport" content="initial-scale=1, width=device-width">
+  <title>Welcome page</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='styles2.css') }}">
+  <script src="{{ url_for('static', filename='js/script.js') }}"></script>
+</head>
+
+<body style="background-color: #f9f9f9;">
+  <header class="header">
+    <h1>Welcome to Lost and Found</h1>
+    <p>By a COEPian, for a COEPian!</p>
+  </header>
+
+  <div class="navbar">
+    <ul>
+      <li>Home</li>
+      <li>About</li>
+    </ul>
+  </div>
+
+  
+  <div>
+    <div class="greeting-container">
+      <h2>Greetings, {{ username }}!</h2>
+      <p class="subtext">What are you looking for?</p>
+      <div class="button-container">
+        <form action="/found_page" method="GET">
+          <button class="action-button" type="submit">Report a Found Item</button>
+        </form>
+        <form action="/lost_page" method="GET">
+          <button class="action-button" type="submit">Search for a Lost Item</button>
+        </form>
+      </div>
+    </div>
+  </div>
+  
+    
+ 
+  <footer class="footer">
+    <p>© 2023 Lost and Found. All rights reserved.</p>
+    <!-- Add your footer links here -->
+  </footer>
+
+  
+</body>
+</html>

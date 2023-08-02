@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Lost and Found!</title>
+  <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+  <div class="bgd"></div>
+  <div class="container">
+    <h1 class="fade-in">Welcome to COEP Tech Lost and Found website!!!</h1>
+  </div>
+  <div class="button-outercontainer">
+  <div class="button-container">
+    <form action="/login" method="GET">
+      <button class="button" type="submit">Sign In</button>
+    </form>
+    <form action="/sign_up">
+      <button class="button" type="submit">Sign up</button>
+    </form>
+  </div>
+  </div>
+ 
+</body>
+</html>
